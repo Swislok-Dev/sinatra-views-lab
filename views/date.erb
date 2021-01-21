@@ -3,7 +3,8 @@
   <body>
     <% current_date = DateTime.now%>
     <%# formatted_date = current_date.strftime("%A, %B %d, %Y") %>
-    <% formatted_date = DateTime.now.strftime("%A, %B %d, %Y") %>
+    <% formatted_date = DateTime.now.strftime("%A, %B %d, %Y") %>   # This will print the date as:  Wednesday, November 18, 2015
+                                                                    # Or whatever the current date is at the moment.
 
     <h1>Today</h1>
     <p><%= "The date is #{formatted_date}."%></p>
